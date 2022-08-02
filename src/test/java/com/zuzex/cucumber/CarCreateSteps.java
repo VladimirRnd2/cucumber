@@ -18,7 +18,7 @@ import java.util.Objects;
 
 public class CarCreateSteps {
 
-    private static final String BASE_URL = "http://localhost:8080/api/person/";
+    private static final String BASE_URL = "http://192.168.2.40:8080/api/person/";
 
     private final RestTemplate restTemplate;
     private Person beforePerson;

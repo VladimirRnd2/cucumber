@@ -17,7 +17,7 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PersonCreateSteps {
-    private static final String BASE_URL = "http://localhost:8080/api/person/";
+    private static final String BASE_URL = "http://192.168.2.40:8080/api/person/";
 
     private final RestTemplate restTemplate;
     private List<Person> beforePersonList;
