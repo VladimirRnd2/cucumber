@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class CarCreateSteps {
 
@@ -39,7 +40,7 @@ public class CarCreateSteps {
 
     @And("Получаем список автомобилей пользователя")
     public void getAllCarByPerson() {
-        beforeCarList = Arrays.stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL + beforePerson.getId() + "/cars", Car[].class))).toList();
+        beforeCarList = Arrays.stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL + beforePerson.getId() + "/cars", Car[].class))).collect(Collectors.toList());
         Assertions.assertNotNull(beforeCarList);
     }
 
