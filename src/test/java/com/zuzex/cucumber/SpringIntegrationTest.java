@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 
 import static io.cucumber.core.options.Constants.PLUGIN_PROPERTY_NAME;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features")
+//@RunWith(Cucumber.class)
+//@CucumberOptions(features = "src/test/resources/features")
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
