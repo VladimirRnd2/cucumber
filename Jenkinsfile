@@ -4,6 +4,7 @@ pipeline {
     stage('Run Tests') {
       steps {
         sh './mvnw clean test'
+        echo 'lol kek cheburek'
       }
       post {
         always {
